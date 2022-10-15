@@ -51,6 +51,9 @@ namespace Ekisa.Api.BotFetal
             services.AddScoped<IChatBotCitaService, ChatBotCitaService>();
             services.AddScoped<IBitacoraService, BitacoraService>();
             services.AddScoped<IBitacoraRepository, BitacoraRepository>();
+            services.AddScoped<IEmpleadoService, EmpleadoService>();
+            services.AddScoped<IEmpleadosRepository, EmpleadoRepository>();
+            
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
