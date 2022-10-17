@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Ekisa.Api.BotFetal.Interfaces.Repositories
+namespace Bitacora.Api.Interfaces
 {
     public interface IRepository<T> where T : class
     {

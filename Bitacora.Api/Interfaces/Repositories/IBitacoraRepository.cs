@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Bitacora.Api.Models;
-using Ekisa.Api.BotFetal.Interfaces.Repositories;
 
 namespace Bitacora.Api.Interfaces.Repositories
 {
