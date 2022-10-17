@@ -1,5 +1,4 @@
 ﻿using Bitacora.Api.Models;
-using Ekisa.Api.BotFetal.Interfaces.Repositories;
 using System.Collections.Generic;
 using System;
 

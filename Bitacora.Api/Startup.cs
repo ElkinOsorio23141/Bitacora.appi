@@ -25,6 +25,7 @@ using Bitacora.Api.Interfaces.Repositories;
 using Bitacora.Api.Interfaces.Services;
 using Bitacora.Api.Respositories;
 using Bitacora.Api.Services;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace Ekisa.Api.BotFetal
 {
@@ -53,6 +54,10 @@ namespace Ekisa.Api.BotFetal
             services.AddScoped<IBitacoraRepository, BitacoraRepository>();
             services.AddScoped<IEmpleadoService, EmpleadoService>();
             services.AddScoped<IEmpleadosRepository, EmpleadoRepository>();
+            services.AddScoped<IClienteService, ClienteService>();
+            services.AddScoped<IClientesRepository, ClienteRepository>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
+            services.AddScoped<IUsuariosRepository, UsuarioRepository>();
             
 
             services.AddControllers();
