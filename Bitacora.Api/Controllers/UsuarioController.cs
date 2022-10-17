@@ -11,7 +11,7 @@ namespace Bitacora.Api.Controllers
     public class UsuarioController : Controller
     {
         private readonly IUsuarioService _service; 
-        private UsuarioController(IUsuarioService service)
+        public UsuarioController(IUsuarioService service)
         {
             _service = service;
         }
