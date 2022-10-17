@@ -8,8 +8,9 @@ using Microsoft.EntityFrameworkCore.Query;
 using Ekisa.Api.BotFetal.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Ekisa.Api.BotFetal.Interfaces.Repositories;
 using Ekisa.Api.BotFetal.Configuration;
+using Bitacora.Api.Interfaces;
+using Bitacora.Api.Interfaces.Repositories;
 
 namespace Ekisa.Api.BotFetal.Repositories
 {
