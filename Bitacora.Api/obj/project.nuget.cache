@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fONP42GRkHWzckkcEt2ukzV1oYaXXHilqkOKJqT/rBbVkv4uNGOqc+wpB/VFs/rHgZMKxPYntmwBk9++xhc6Ig==",
+  "dgSpecHash": "4UWXEWONmJAeApMHrw7wjo+QHdArqzTm+B6HhzS64WqVx27JzTlCsz0mJ9cDFbx7XEZYfs50pjtzeLDGivr9eA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS-PC\\Desktop\\Bitacora.appi\\Bitacora.Api\\Bitacora.Api.csproj",
+  "projectFilePath": "D:\\Bitacora\\Bitacora.appi\\Bitacora.Api\\Bitacora.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS-PC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ASUS-PC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

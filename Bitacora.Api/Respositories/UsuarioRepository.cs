@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Bitacora.Api.Interfaces.Repositories;
 using Bitacora.Api.Interfaces.Services;
 using Bitacora.Api.Models;
 using Ekisa.Api.BotFetal.Models;
 using Ekisa.Api.BotFetal.Models.Context;
 using Ekisa.Api.BotFetal.Repositories;
+using Ekisa.Api.BotFetal.Services.Common;
 using Microsoft.Extensions.Configuration;
 
 namespace Bitacora.Api.Respositories
@@ -30,6 +32,40 @@ namespace Bitacora.Api.Respositories
 
             return usuarioAdd;
         }
+
+        public int CrearUsuario(InsertarUsuarioParams usuario)
+        {
+            try
+            {
+                var command = _commandContext.DbContext;
+                var result = command.ExecuteNonQuery("spInsertarUsuarios",
+                    new[]
+                    {
+                        new ParameterCommon
+                            { Name = "@CodigoUsuario", Value = usuario.CodigoUsuario.ToString() },
+                        new ParameterCommon
+                            { Name = "@NombreUsuario", Value = usuario.NombreUsuario.ToString() },
+                        new ParameterCommon
+                            { Name = "@ClaveUsuario", Value = usuario.ClaveUsuario.ToString() },
+                        new ParameterCommon
+                            { Name = "@IdEmpleado", Value = usuario.IdEmpleado.ToString() },
+                        new ParameterCommon
+                            { Name = "@IdPerfil", Value = usuario.IdPerfil.ToString() },
+                        new ParameterCommon
+                            { Name = "@Estado", Value = usuario.Estado.ToString() },
+
+                    });
+
+                if (result != null)
+                {
+                    return Convert.ToInt32(result);
+                }
+                else { return 0; }
+            }
+            catch (Exception ex) { return 0; }
+        }
+
+
 
     }
 }

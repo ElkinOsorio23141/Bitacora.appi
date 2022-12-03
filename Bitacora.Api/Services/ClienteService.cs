@@ -24,5 +24,10 @@ namespace Bitacora.Api.Services
         {
             return _repository.GetAllClientes();
         }
+
+        public int CrearCliente(InsertarClienteParams cliente)
+        {
+            return _repository.CrearCliente(cliente);
+        }
     }
 }

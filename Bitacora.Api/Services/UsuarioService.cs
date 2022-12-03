@@ -25,5 +25,10 @@ namespace Bitacora.Api.Services
             return _repository.GetAllUsuario();
         }
 
+        public int CrearUsuario(InsertarUsuarioParams usuario)
+        {
+            return _repository.CrearUsuario(usuario);
+        }
+
     }
 }

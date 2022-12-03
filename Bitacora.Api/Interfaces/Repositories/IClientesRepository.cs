@@ -6,5 +6,9 @@ namespace Bitacora.Api.Interfaces.Repositories
     public interface IClientesRepository:IRepository<Cliente>
     {
         public List<Cliente> GetAllClientes();
+
+        public int CrearCliente(InsertarClienteParams cliente);
     }
+
+
 }

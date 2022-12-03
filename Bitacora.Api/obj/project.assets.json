@@ -5902,11 +5902,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS-PC\\Desktop\\Bitacora.appi\\Bitacora.Api\\Bitacora.Api.csproj",
+      "projectUniqueName": "D:\\Bitacora\\Bitacora.appi\\Bitacora.Api\\Bitacora.Api.csproj",
       "projectName": "Bitacora.Api",
-      "projectPath": "C:\\Users\\ASUS-PC\\Desktop\\Bitacora.appi\\Bitacora.Api\\Bitacora.Api.csproj",
+      "projectPath": "D:\\Bitacora\\Bitacora.appi\\Bitacora.Api\\Bitacora.Api.csproj",
       "packagesPath": "C:\\Users\\ASUS-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS-PC\\Desktop\\Bitacora.appi\\Bitacora.Api\\obj\\",
+      "outputPath": "D:\\Bitacora\\Bitacora.appi\\Bitacora.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5981,7 +5981,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

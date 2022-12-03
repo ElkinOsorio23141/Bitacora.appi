@@ -26,5 +26,10 @@ namespace Bitacora.Api.Services
         {
             return _repository.GetAllEmpleado();
         }
+
+        public int CrearEmpleado(InsertarEmpleadoParams empleado)
+        {
+            return _repository.CrearEmpleado(empleado);
+        }
     }
 }

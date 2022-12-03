@@ -21,7 +21,7 @@ namespace Ekisa.Api.BotFetal.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=DIEGO-M; Initial Catalog=Quiron; User Id=sa; Password=1234; Integrated Security=True;Trusted_Connection=False;Encrypt=True;");
+                optionsBuilder.UseSqlServer("Data Source=ASUS-PC\\SQLEXPRESS; Initial Catalog=Bitacora; User Id=sa; Password=1234; Integrated Security=True;Trusted_Connection=False;Encrypt=True;");
             }
         }
 
