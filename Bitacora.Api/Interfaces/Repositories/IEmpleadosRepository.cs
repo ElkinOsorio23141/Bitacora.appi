@@ -9,5 +9,8 @@ namespace Bitacora.Api.Interfaces.Repositories
         public List<Empleado> GetAllEmpleado();
 
         public int CrearEmpleado(InsertarEmpleadoParams empleado);
+
+        public int EliminarEmpleado(Empleado IdentificacionEmpleado);
+
     }
 }

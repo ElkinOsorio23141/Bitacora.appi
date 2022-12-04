@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Ekisa.Api.BotFetal.Services.Common;
 using System;
+using Newtonsoft.Json.Linq;
 
 namespace Bitacora.Api.Respositories
 {
@@ -45,7 +46,7 @@ namespace Bitacora.Api.Respositories
                         new ParameterCommon
                             { Name = "@Identificacion", Value = empleado.Identificacion.ToString() },
                         new ParameterCommon
-                            { Name = "@IdTipoIdentificacion", Value = empleado.IdTipoIdentificacion.ToString() },
+                            { Name = "@IdTipoIdentificacion", Value = empleado.IdTipoIdentificacion },
                         new ParameterCommon
                             { Name = "@PrimerNombre", Value = empleado.PrimerNombre.ToString() },
                         new ParameterCommon
@@ -57,7 +58,7 @@ namespace Bitacora.Api.Respositories
                         new ParameterCommon
                             { Name = "@Sexo", Value = empleado.Sexo.ToString() },
                         new ParameterCommon
-                            { Name = "@FechaNacimiento", Value = empleado.FechaNacimiento.ToString() },
+                            { Name = "@FechaNacimiento", Value = empleado.FechaNacimiento },
                         new ParameterCommon
                             { Name = "@Direccion", Value = empleado.Direccion.ToString() },
                         new ParameterCommon
@@ -78,6 +79,29 @@ namespace Bitacora.Api.Respositories
                 else { return 0; }
             }
             catch (Exception ex) { return 0; }
+        }
+
+        public int EliminarEmpleado(Empleado IdentificacionEmpleado)
+        {
+            try
+            {
+                var command = _commandContext.DbContext;
+                var result = command.ExecuteNonQuery("spEliminarEmpleado",
+                    new[]
+                    {
+                        new ParameterCommon
+                            { Name = "@Identificacion",  Value = IdentificacionEmpleado.ToString() },
+
+                    });
+
+                 if (result != null)
+                {
+                    return Convert.ToInt32(result);
+                }
+                else { return 0; }
+            }
+            catch (Exception ex) { return 0; }
+
         }
 
     }

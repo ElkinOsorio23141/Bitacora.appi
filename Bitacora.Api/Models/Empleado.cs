@@ -7,6 +7,6 @@ namespace Bitacora.Api.Models
     {
         [Key]
         [JsonIgnore]
-        public int IdEmpleado { get; set; }
+        public string IdEmpleado { get; set; }
     }
 }

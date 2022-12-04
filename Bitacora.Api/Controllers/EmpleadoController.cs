@@ -42,9 +42,23 @@ namespace Bitacora.Api.Controllers
             return new Response
             {
                 IsSuccess = true,
-                Message = response > 0 ? "Se insertó correctamente" : "No se insertaron registros",
+                Message = response < 0 ? "Se insertó correctamente" : "No se insertaron registros",
                 Result = response
             };
         }
+
+        [HttpDelete]
+        [Route("DeleteEliminarEmpleado")]
+        public async Task<ActionResult<Response>> DeleteEliminarEmpleado(Empleado idEmpleado)
+        {
+            var response = _service.EliminarEmpleado(idEmpleado);
+            return new Response
+            {
+                IsSuccess = true,
+                Message = response < 0 ? "Se eliminó correctamente" : "No se eliminaron los registros",
+                Result = response
+            };
+        }
+
     }
 }

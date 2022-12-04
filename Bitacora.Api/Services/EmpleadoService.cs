@@ -31,5 +31,11 @@ namespace Bitacora.Api.Services
         {
             return _repository.CrearEmpleado(empleado);
         }
+
+        public int EliminarEmpleado(Empleado IdentificacionEmpleado)
+        {
+            return _repository.EliminarEmpleado(IdentificacionEmpleado);
+        }
+
     }
 }
